@@ -1,0 +1,90 @@
+
+ 
+
+ 
+
+
+<!docttype html5>
+
+<html>
+
+<head><title>acc</title></head>
+
+<script Language="JavaScript">
+
+function circle()
+
+{
+
+var r,a,p;
+
+r=document.frmo.txtra.value;
+
+a=3.14*r*r;
+
+p=2*3.14*r;
+
+document.frmo.txta.value=a;
+
+document.frmo.txtp.value=p;
+
+}
+
+function rec()
+
+{
+
+var l,b,A,P;
+
+l=document.frmo.txtl.value;
+
+b=document.frmo.txtb.value;
+
+A=l*b;
+
+P=(2*l)+(2*b);
+
+document.frmo.txtar.value=A;
+
+document.frmo.txtpr.value=P;
+
+}
+
+</script>
+
+<body bgcolor="pink" text="black">
+
+<form name="frmo">
+
+<center>
+
+Enter the radius of the circle:
+
+<input type="text" name="txtra"><br>
+
+Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type="text" name="txta"><br>
+
+Perimeter:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type="text" name="txtp"><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+
+<input type="button" value="show" onclick="circle()"><br>
+
+Enter the length and breadth of the circle:
+
+<input type="text" name="txtl" size"15"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txtb"size="15"><br>
+
+Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txtar"><br>
+
+Perimeter:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type="text" name="txtpr">
+
+<input type="button" value="show" onclick="rec()">
+
+</center></form></body></html>
+
