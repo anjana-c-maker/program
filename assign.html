@@ -1,0 +1,171 @@
+
+ 
+
+ 
+
+
+
+<!docttype html5>
+
+<html>
+
+<head><title>assignment</title></head>
+
+<script Language="JavaScript">
+
+function circle()
+
+{
+
+var r,a,p;
+
+r=document.frmo.txtra.value;
+
+a=3.14*r*r;
+
+p=2*3.14*r;
+
+document.frmo.txta.value=a;
+
+document.frmo.txtp.value=p;
+
+}
+
+function rec()
+
+{
+
+var l,b,A,P;
+
+l=document.frmo.txtl.value;
+
+b=document.frmo.txtb.value;
+
+A=l*b;
+
+P=(2*l)+(2*b);
+
+document.frmo.txtar.value=A;
+
+document.frmo.txtpr.value=P;
+
+}
+
+function prime(){
+
+var n,i,j,f;
+
+n=parseInt(prompt("Enter the limit"));
+
+for(i=2;i<=n;i++)
+
+{
+
+f=0;
+
+for(j=2;j<=i/2;j++)
+
+{
+
+if(i%j==0)
+
+{
+
+f=1;
+
+break;
+
+}
+
+}
+
+if(f==0)
+
+{
+
+document.write(i+"<br>");
+
+}
+
+}
+
+}
+
+ 
+
+</script>
+
+<body bgcolor="pink" text="black">
+
+<Marquee width="100%" bgcolor="aqua" direction="right">
+
+This is a web page with folloewing functionalities<br>
+
+1.User should be able to find the area and perimeter of a circle<br>
+
+2.user should be able to find the area and perimeter of the rectangle
+
+<br>
+
+3.user should be able to find all the prime numbers upto a given number.
+
+</marquee>
+
+<form name="frmo">
+
+<center>
+
+<fieldset>
+
+<font color="blue"><legend><b><u>CIRCLE</b></u></legend></font>
+
+<b>Enter the radius of the circle:<b>
+
+<input type="text" name="txtra"><br>
+
+<b>Area:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type="text" name="txta"><br>
+
+<b>Perimeter:</b>&nbsp;&nbsp;&nbsp;
+
+<input type="text" name="txtp"><br>
+
+<center><input type="button" value="show" onclick="circle()"><br></center>
+
+</fieldset>
+
+<fieldset>
+
+<font color="red"><legend><strong><u>RECTANGLE<strong></u></legend></font>
+
+Enter the length of the rectangle:
+
+<input type="text" name="txtl" size"15"><br>
+
+<b>Enter the breadth of the rectangle:</b>
+
+<input type="text" name="txtb"size="15"><br>
+
+<b>Area:</b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type="text" name="txtar"><br>
+
+<b>Perimeter:</b>&nbsp;&nbsp;
+
+<input type="text" name="txtpr"><br>
+
+<center><input type="button" value="show" onclick="rec()"></center>
+
+</fieldset>
+
+<fieldset>
+
+<font color="green"><legend><b><u>PRIMENUMBER UP TO GIVEN LIMIT:</b></u></legend></font>
+
+<button onclick="prime()">cilckhere</button>
+
+</fieldset>
+
+</center></form></body></html>
+
